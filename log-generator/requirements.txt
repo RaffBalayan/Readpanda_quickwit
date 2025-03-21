@@ -1,0 +1,3 @@
+# log-generator/requirements.txt
+Faker
+kafka-python
