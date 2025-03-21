@@ -1,0 +1,7 @@
+version: 0.7
+source_id: redpanda-source
+source_type: kafka
+params:
+  topic: processed-logs
+  bootstrap_servers: redpanda:9092
+  client_id: quickwit

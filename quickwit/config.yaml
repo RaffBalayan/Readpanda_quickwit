@@ -1,0 +1,25 @@
+version: 0.7
+index_id: weblogs
+doc_mapping:
+  field_mappings:
+    - name: host
+      type: text
+    - name: user
+      type: text
+    - name: timestamp
+      type: datetime
+      input_formats: ["%d/%b/%Y:%H:%M:%S %z"]
+    - name: path
+      type: text
+    - name: status
+      type: u64
+    - name: size
+      type: u64
+    - name: referer
+      type: text
+    - name: agent
+      type: text
+indexing_settings:
+  commit_timeout_secs: 5
+search_settings:
+  default_search_fields: [host, path, agent]
